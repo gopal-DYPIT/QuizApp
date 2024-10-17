@@ -10,16 +10,16 @@ const App = () => {
 
   const startQuiz = () => {
     setIsQuizStarted(true);
-    setScoreData(null); // Reset score data when starting a new quiz
+    setScoreData(null); 
   };
 
   const handleQuizCompleted = (score) => {
-    setScoreData(score); // Save score data when quiz is completed
+    setScoreData(score);
     setIsQuizStarted(false);
   };
 
   const startAgain = () => {
-    setScoreData(null); // Reset score data for the new attempt
+    setScoreData(null); 
     setIsQuizStarted(false);
   };
 

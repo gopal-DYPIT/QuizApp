@@ -65,9 +65,7 @@ const Quiz = () => {
 
   return (
     <div className="flex items-center justify-center h-screen bg-lime-200">
-      {/* Phone Container */}
       <div className="relative w-[340px] h-[700px] bg-black rounded-3xl shadow-lg flex items-center justify-center">
-        {/* Screen Content */}
         <div className="absolute pb-20 inset-3 bg-gradient-to-b from-blue-400 to-blue-200 rounded-2xl flex flex-col items-center justify-center text-white p-8">
           {questions.length === 0 ? (
             <div className="flex items-center justify-center h-full">
@@ -75,7 +73,6 @@ const Quiz = () => {
             </div>
           ) : (
             <>
-              {/* Circle with current question number */}
               <div className="flex items-center mb-10 justify-center bg-blue-500 text-white text-2xl font-bold w-16 h-16 rounded-full">
                 {currentQuestionIndex + 1}
               </div>
@@ -106,8 +103,6 @@ const Quiz = () => {
             </>
           )}
         </div>
-
-        {/* Phone Notch */}
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-5 bg-black rounded-b-xl"></div>
       </div>
     </div>

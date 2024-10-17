@@ -9,19 +9,13 @@ const Report = ({ scoreData, startAgain }) => {
 
   return (
     <div className="flex items-center justify-center h-screen bg-lime-200">
-      {/* Phone Container */}
       <div className="relative w-[340px] h-[700px] bg-black rounded-3xl shadow-lg flex items-center justify-center">
-        {/* Screen Content */}
         <div className="absolute inset-3 bg-gradient-to-b from-blue-400 to-blue-200 rounded-2xl flex flex-col items-center justify-center text-white p-8">
           <h2 className="text-3xl font-bold mb-4 text-center">Your Result</h2>
-
-          {/* Circular Gauge */}
           <div className="relative w-40 h-40 flex items-center justify-center mb-6">
             <div className="absolute inset-0 flex items-center justify-center">
               <span className="text-2xl font-bold">{Math.round(correctPercentage)}%</span>
             </div>
-            
-            {/* Outer Circle */}
             <svg className="w-full h-full">
               <circle cx="50%" cy="50%" r="60" strokeWidth="10" stroke="#e0e0e0" fill="none" />
               <circle
@@ -54,8 +48,6 @@ const Report = ({ scoreData, startAgain }) => {
             Start Again
           </button>
         </div>
-
-        {/* Phone Notch */}
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-5 bg-black rounded-b-xl"></div>
       </div>
     </div>
