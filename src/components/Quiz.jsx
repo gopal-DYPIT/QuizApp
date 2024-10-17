@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { startQuiz, submitAnswer, finishQuiz } from '../api/quizApp';
-import Report from './Report'; // Import the Report component
+import Report from './Report'; 
 
 const Quiz = () => {
   const [questions, setQuestions] = useState([]);
@@ -64,7 +64,7 @@ const Quiz = () => {
   }
 
   return (
-    <div className="flex items-center justify-center h-screen bg-lime-200">
+    <div className="flex items-center justify-center h-screen bg-[#BCF2F6]">
       <div className="relative w-[340px] h-[700px] bg-black rounded-3xl shadow-lg flex items-center justify-center">
         <div className="absolute pb-20 inset-3 bg-gradient-to-b from-blue-400 to-blue-200 rounded-2xl flex flex-col items-center justify-center text-white p-8">
           {questions.length === 0 ? (

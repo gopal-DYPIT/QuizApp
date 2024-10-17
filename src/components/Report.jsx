@@ -8,7 +8,7 @@ const Report = ({ scoreData, startAgain }) => {
   const correctPercentage = totalQuestions > 0 ? (correctAnswers / totalQuestions) * 100 : 0;
 
   return (
-    <div className="flex items-center justify-center h-screen bg-lime-200">
+    <div className="flex items-center justify-center h-screen bg-[#BCF2F6]">
       <div className="relative w-[340px] h-[700px] bg-black rounded-3xl shadow-lg flex items-center justify-center">
         <div className="absolute inset-3 bg-gradient-to-b from-blue-400 to-blue-200 rounded-2xl flex flex-col items-center justify-center text-white p-8">
           <h2 className="text-3xl font-bold mb-4 text-center">Your Result</h2>
@@ -43,7 +43,7 @@ const Report = ({ scoreData, startAgain }) => {
 
           <button 
             onClick={startAgain} 
-            className="mt-8 bg-white text-blue-500 py-2 px-4 rounded shadow-lg hover:bg-green-300  transition duration-200"
+            className="mt-8 bg-white text-blue-500 py-2 px-4 rounded shadow-lg hover:bg-lime-200  transition duration-200"
           >
             Start Again
           </button>

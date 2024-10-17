@@ -24,7 +24,7 @@ const App = () => {
   };
 
   return (
-    <div className="App flex flex-col items-center justify-center h-screen bg-lime-200">
+    <div className="App flex flex-col items-center justify-center h-screen bg-[#BCF2F6]">
       {scoreData ? (
         <Report scoreData={scoreData} startAgain={startAgain} />
       ) : isQuizStarted ? (
